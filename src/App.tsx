@@ -18,12 +18,11 @@ function App() {
   const ProtectedRoute = ({ children }: { children: React.ReactNode }) => {
     const [loading, setLoading] = useState(true);
     const [authenticated, setAuthenticated] = useState(false);
-    const [error, setError] = useState('')
 
     useEffect(() => {
       supabase.auth.getSession()
         .then(({ data: { session } }) => { setAuthenticated(!!session); })
-        .catch((e) => { setAuthenticated(false); setError(e)})
+        .catch(() => { setAuthenticated(false) })
         .finally(() => { setLoading(false); });
     }, []);
 

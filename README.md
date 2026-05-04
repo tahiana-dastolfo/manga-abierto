@@ -3,7 +3,7 @@
 > 🚧 **En desarrollo** — El proyecto se encuentra en construcción activa.
 
 ## 🌐 Demo
-🔗 **[Live Demo](https://manga-abierto.pages.dev/login)
+🔗 **[Live Demo](https://manga-abierto.pages.dev/login)**
 
 ![Vista previa](./preview.png)
 
